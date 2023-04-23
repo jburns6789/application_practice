@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +29,12 @@ public class MainActivity extends AppCompatActivity {
 
        Log.i("Values", secondName.getText().toString());
 
-        Toast.makeText(this, "Hello " + secondName.getText().toString(), Toast.LENGTH_SHORT).show();
+       Toast.makeText(this, "Hello " + secondName.getText().toString(), Toast.LENGTH_SHORT).show();
+    }
+
+    public void pictureChange(View view){
+        ImageView image = (ImageView) findViewById(R.id.imageView2);
+        image.setImageResource(R.drawable.outlander);
     }
 
 
