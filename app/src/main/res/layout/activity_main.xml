@@ -111,4 +111,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/renegade" />
 
+    <Button
+        android:id="@+id/screenChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="645dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="38dp"
+        android:text="Next Screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
