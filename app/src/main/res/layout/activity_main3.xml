@@ -7,34 +7,41 @@
     tools:context=".MainActivity3">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/maverickInterior"
         android:layout_width="325dp"
         android:layout_height="274dp"
         android:layout_marginStart="43dp"
         android:layout_marginTop="242dp"
         android:layout_marginEnd="74dp"
         android:layout_marginBottom="253dp"
+        android:alpha="0"
+        android:onClick="fade"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/maverickinterior" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="325dp"
-        android:layout_height="274dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="242dp"
-        android:layout_marginEnd="74dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/maverickinterior" />
+
+    <ImageView
+        android:id="@+id/maverickExterior"
+        android:layout_width="325dp"
+        android:layout_height="274dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="253dp"
+        android:alpha="1"
+        android:onClick="fade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/maverickexterior" />
+
 
     <Button
         android:id="@+id/thirdScreenBack"

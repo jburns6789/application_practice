@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 public class MainActivity3 extends AppCompatActivity {
 
+    boolean interiorIsShowing = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +18,6 @@ public class MainActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_main3);
 
         thirdScreenReturnToMain();
-        //fade();
     }
 
     public void thirdScreenReturnToMain(){
@@ -33,9 +33,23 @@ public class MainActivity3 extends AppCompatActivity {
     public void fade(View view){
         Log.i("Info", "Imageview Tapped");
 
-        ImageView imageView = (ImageView) findViewById((R.id.imageView));
+        ImageView maverickInterior = (ImageView) findViewById((R.id.maverickInterior));
+        maverickInterior.animate().alpha(1).setDuration(2000);
 
-        imageView.animate().alpha(0).setDuration(2000);
+        ImageView maverickExterior = (ImageView) findViewById((R.id.maverickExterior));
+        maverickExterior.animate().alpha(0).setDuration(2000);
+
+        if(interiorIsShowing) {
+            interiorIsShowing = false;
+            maverickInterior.animate().alpha(1).setDuration(2000);
+            maverickExterior.animate().alpha(0).setDuration(2000);
+        }else{
+            interiorIsShowing = true;
+            maverickInterior.animate().alpha(0).setDuration(2000);
+            maverickExterior.animate().alpha(1).setDuration(2000);
+        }
     }
+
+
 
 }
