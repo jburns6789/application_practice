@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         configureNextButton();
+        thirdScreenView();
     }
 
     public void clickFunction(View view){
@@ -49,6 +50,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MainActivity2.class));
             }
             });
+        }
+
+        private void thirdScreenView(){
+        Button thirdScreenButton = (Button) findViewById(R.id.thirdScreenButton);
+        thirdScreenButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MainActivity3.class));
+            }
+        });
         }
 }
 
